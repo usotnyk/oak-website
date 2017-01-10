@@ -1,3 +1,16 @@
+body {
+  font-size: 12px;
+  color: #767676;
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+hr {
+  width: 30px;
+  margin-left: 0;
+}
+
 /* NAVBAR*/
 #logo-img {
   background: url('../images/logo.png') no-repeat;
@@ -11,24 +24,18 @@
   background-color: transparent;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
+/* Everything but the jumbotron gets side spacing for mobile first views
 .header,
 .marketing,
 .footer {
   padding-right: 15px;
   padding-left: 15px;
-}
+} */
 
 /* Custom page header */
 .header {
   padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -41,54 +48,93 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
+/* JUMBOTRON */
 .jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+  min-width: auto;
+  min-height: 400px;
+  background: url('../images/header.jpg') no-repeat;
+  background-size: 100%;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 0;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
+.jumbotron h1 {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 2.2em;
+  margin-top: 130px;
+}
+
+.jumbotron h1 span {
+  font-weight: lighter;
+  letter-spacing: 7px;
+  padding: 8px;
+  margin-left: 15px;
+}
+
+span.highlight {
+    background-color: #53EEC9;
+}
+
+.jumbotron h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6em;
+  margin-top: 30px;
+}
+
+ div.vertical-line{
+  width: 1px;
+  background-color: #767676;
+  height: 1.5em;
+  display:inline-block;
+  margin-left: 10px;
+    }
+
+
+/* MEDIA QUERIES
+--------------------*/
+@media (max-width: 768px) {
+  /* this is here just for testing */
+  body {
+    color: blue;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
+
+  .container {
+    max-width: 720px;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+
+  .jumbotron h1 {
+    float: none;
+    margin-top: 20%;
+    font-size: 200%;
   }
+
+  .jumbotron h2 {
+  font-size: 150%;
+  margin-top: 5%;
+}
+
+@media (max-width: 420px) {
+
+  body {
+    color: red;
+  }
+
+  .jumbotron h1 {
+    float: none;
+    margin-top: 20%;
+    font-size: 110%;
+  }
+
+  .jumbotron h2 {
+  font-size: 90%;
+  margin-top: 5%;
 }
 
 
