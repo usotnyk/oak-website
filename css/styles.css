@@ -1,3 +1,16 @@
+/* NAVBAR*/
+#logo-img {
+  background: url('../images/logo.png') no-repeat;
+  width: 150px;
+  height: 40px;
+  margin: 10px 15px 10px 0;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: black;
+  background-color: transparent;
+}
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
@@ -77,3 +90,5 @@ body {
     border-bottom: 0;
   }
 }
+
+
