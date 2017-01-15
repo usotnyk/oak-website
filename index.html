@@ -47,21 +47,21 @@
 <!--JUMBOTRON-->
       <div class="jumbotron">
         <h1 class="text-uppercase">Pure<span class="highlight">Elegance</span></h1>
-        <h2 class="text-uppercase">Good things is coming<div class="vertical-line"/></h2>
+        <h2 class="text-uppercase">Good things is coming<div class="vertical-line"></div></h2>
       </div>
 
 <!--END of JUMBOTRON-->
 
 <!--Main Content-->
   <!--History of Agency-->
-    <div>
+    <div class="clearfix">
       <div class="history col-sm-6">
         <h3>History of Agency</h3>
         <hr>
         <p class= "text-uppercase">Who loves or pursues or desires to obtain pain of itself, but because occasionally circumstances occur and pain can procure him some great pleasure</p>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p>
       </div>
-      <div class="col-sm-6">
+      <div class="history col-sm-6">
         <img id="history-img" src="images/history.jpg" alt="history image">
       </div>
     </div>
@@ -115,31 +115,34 @@
 
 <!--Photo Tiles-->
   <div id="tiles" class="container">
-    <div class="col-sm-4">
+    <div class="col-sm-4 tiles__item">
+      <div class="center"></div>
       <img src="images/portfolio1.jpg" alt="portfolio 1">
+
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 tiles__item">
+      <div class="center"></div>
       <img src="images/portfolio2.jpg" alt="portfolio 2">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 tiles__item">
       <img src="images/portfolio3.jpg" alt="portfolio 3">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 tiles__item">
       <img src="images/portfolio4.jpg" alt="portfolio 4">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 tiles__item">
       <img src="images/portfolio5.jpg" alt="portfolio 5">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 tiles__item">
       <img src="images/portfolio6.jpg" alt="portfolio 6">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 tiles__item">
       <img src="images/portfolio7.jpg" alt="portfolio 7">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 tiles__item">
       <img src="images/portfolio8.jpg" alt="portfolio 8">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 tiles__item">
       <img src="images/portfolio9.jpg" alt="portfolio 9">
     </div>
   </div>
@@ -154,9 +157,9 @@
       <h2>Stay informed <div>with our <strong>newsletter</strong></div></h2>
     </div>
     <div id="informed-right" class="col-sm-6">
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="ENTER YOUR EMAIL">
+      <form class="navbar-form newsletter-form">
+        <div class="form-group newsletter-form__group">
+          <input type="text" class="form-control newsletter-form__input" placeholder="ENTER YOUR EMAIL">
         </div>
         <div><button type="submit" class="btn">SUBSCRIBE</button></div>
       </form>
@@ -167,9 +170,12 @@
 
 <!--END of Main Content-->
 
+  </div> <!-- /container -->
+
 <!--FOOTER-->
 
-  <section>
+<div class="container-fluid">
+  <div id="footer" class="container">
     <div class="col-sm-4">
       <h4>O. A. K. THEME</h4>
       <p>City 35 AM</p>
@@ -186,25 +192,22 @@
           <a href="#" title="Pinterest"><i class="fa fa-pinterest"></i></a>
           <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
           <a href="#" title="GooglePlus"><i class="fa fa-google-plus"></i></a>
-
-
       </div>
-      <p>&#169; 2015 OAK, ALL RIGHTS RESERVED</p>
+      <p id="copyright">&#169; 2015 OAK, ALL RIGHTS RESERVED</p>
     </div>
 
-    <div class="col-sm-4">
+    <div id="contact" class="col-sm-4">
       <H4>CONTACT INFO</H4>
       <p>T: 003 124 115</p>
       <p>E: <a href="mailto:info@mail.com">info@mail.com</a></p>
       <p>W: <a href="www.website.com">www.website.com</a></p>
     </div>
-
-  </section>
-
+  </div>
+</div> <!--End of footer container-->
 
 <!--End of FOOTER-->
 
-  </div> <!-- /container -->
+
 
 
 
