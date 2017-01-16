@@ -43,12 +43,11 @@ h3, h4 {
     background-color: #53EEC9;
 }
 
-/* Custom page header */
 .header {
   padding-bottom: 20px;
   border-bottom: 1px;
 }
-/* Make the masthead heading the same height as the navigation */
+
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -83,7 +82,7 @@ h3, h4 {
 }
 
 span.highlight {
-    background-color: #53EEC9;
+  background-color: #53EEC9;
 }
 
 .jumbotron h2 {
@@ -98,7 +97,7 @@ span.highlight {
   height: 1.5em;
   display:inline-block;
   margin-left: 10px;
-    }
+}
 
 /*History*/
 .history {
@@ -119,7 +118,7 @@ span.highlight {
 }
 
 .history img {
-  min-width: 100%;
+  width: 100%;
   padding-left: 15px;
 }
 
@@ -147,6 +146,7 @@ span.highlight {
 
 #secondnav {
   padding-left: 0px;
+  margin-top: 50px;
 }
 
 .nav-pills>li.active>a:hover {
@@ -175,19 +175,9 @@ span.highlight {
 .tiles__item:nth-child(3n+1) {
   clear: both;
 }
-/*
-#tiles img:hover {
-  opacity: 0.5;
-  border: 2px solid black;
-  box-sizing: border-box;
-}*/
 
 .center {
   position: absolute;
-/*  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #53EEC9;*/
   width: calc(100% - 17px);
   height: calc(100% - 20px * 2);
   top: 20px;
@@ -245,10 +235,10 @@ span.highlight {
   margin: 50px auto 0;
   text-align: center;
 }
-  .newsletter-form__group {
+  .newsletter-form-group {
     width: 100%;
   }
-  .newsletter-form__input.newsletter-form__input {
+  .newsletter-form-input.newsletter-form-input {
     width: 100%;
   }
 
@@ -263,6 +253,7 @@ span.highlight {
   box-shadow: none;
   border-radius: 0;
   margin-top: 15px;
+  letter-spacing: 5px;
 }
 
 /*END of Stay Informed*/
@@ -302,6 +293,7 @@ span.highlight {
 
 #copyright {
   margin-top: 40px;
+  text-align: center;
 }
 
 .social a {
@@ -318,13 +310,10 @@ span.highlight {
 /* MEDIA QUERIES
 --------------------*/
 @media (max-width: 767px) {
-  /* this is here just for testing */
-  body {
-    color: blue;
-  }
 
 .container {
   max-width: 720px;
+  padding-right: 15px;
 }
 
 .jumbotron h1 {
@@ -342,6 +331,10 @@ span.highlight {
   padding-top: 0px;
 }
 
+.history img {
+  padding-right: 20px;
+}
+
 #plan, #illustration {
   padding-left: 0px;
 }
@@ -349,6 +342,10 @@ span.highlight {
 #tiles img {
   margin-left: auto;
   margin-right: auto;
+}
+
+.center:hover {
+  visibility: hidden;
 }
 
 #informed-left h2 {
@@ -371,19 +368,15 @@ span.highlight {
   text-align: center;
 }
 }
+
 @media (max-width: 420px) {
+.jumbotron h1 {
+  float: none;
+  margin-top: 20%;
+  font-size: 110%;
+}
 
-  body {
-    color: red;
-  }
-
-  .jumbotron h1 {
-    float: none;
-    margin-top: 20%;
-    font-size: 110%;
-  }
-
-  .jumbotron h2 {
+.jumbotron h2 {
   font-size: 90%;
   margin-top: 5%;
 }
