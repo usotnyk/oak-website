@@ -1,5 +1,4 @@
-# oak-website
-Repository for technical challenge for HackerYou
+# oak-website - technical assignment for HackerYou
 
 Used tech and libraries:
 
